@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1732457966">
+  <File Type="PA-TCL" Name="VGAtest.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="VGAtest_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="VGAtest_reports.tcl"/>
+  <File Type="RDS-RDS" Name="VGAtest.vds"/>
+  <File Type="RDS-UTIL" Name="VGAtest_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="VGAtest_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="VGAtest.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="VGAtest_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="VGAtest_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/PixelClock.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Pong/Pong.srcs/sources_1/new/PixelClock.v"/>
+        <Attr Name="ImportTime" Val="1732456192"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SyncGenerator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Pong/Pong.srcs/sources_1/new/SyncGenerator.v"/>
+        <Attr Name="ImportTime" Val="1732457953"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/counter_x_bit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Pong/Pong.srcs/sources_1/new/counter_x_bit.v"/>
+        <Attr Name="ImportTime" Val="1732455824"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/VGAtest.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Pong/Pong.srcs/sources_1/new/VGAtest.v"/>
+        <Attr Name="ImportTime" Val="1732457807"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PaddleMovement.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Pong/Pong.srcs/sources_1/new/PaddleMovement.v"/>
+        <Attr Name="ImportTime" Val="1732454892"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FrameBuffer.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Pong/Pong.srcs/sources_1/new/FrameBuffer.v"/>
+        <Attr Name="ImportTime" Val="1732456645"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="VGAtest"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
